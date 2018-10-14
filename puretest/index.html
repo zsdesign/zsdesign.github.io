@@ -1,0 +1,19 @@
+<head>
+	<script src="anijs.js"></script>
+	<link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+</head>
+<body>
+    <header data-anijs="if: click, do: flipInY animated">
+        header
+    </header>
+    <nav data-anijs="if: scroll, on: window, do: swing animated, to: footer">
+        nav
+    </nav>
+    <div id="main" data-anijs="if: mouseover, on: body, do: swing animated">
+        if: load, on: window, do: swing animated
+    </div>
+    <footer>
+        footer
+    </footer>
+    <script src="anijs-min.js"></script>
+</body>

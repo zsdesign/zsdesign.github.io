@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>只用css3实现menu的toggle效果</title>
+    <style>
+        .wrap{
+            width:400px;
+            margin:50px auto 0;
+        } 
+        label {            font-size: 14px;
+            padding:10px;
+            border:1px solid #00A000;
+        }
+        #menu-toggle {
+            display: none; /* hide the checkbox */
+        }
+        #menu {
+            display: none;
+            list-style: none;
+            width:200px;
+            border:1px solid #00a0e9;
+        }
+        #menu li{
+            margin: 10px 0;
+        }
+        #menu li a{
+            text-decoration: none;
+        }
+        #menu li a:active{
+            color:#00a5e0;
+        }
+        /*这句最关键*/
+        #menu-toggle:checked + #menu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <label for="menu-toggle">
+            点击显示隐藏菜单
+        </label>
+        <input type="checkbox" id="menu-toggle"/>
+        <ul id="menu">
+            <li><a href="http://www.baidu.com">First link</a></li>
+            <li><a href="#">Second link</a></li>
+            <li><a href="#">Third link</a></li>
+        </ul>
+    </div>
+    <p>适用于Chrome,FF,IE9+浏览器</p>
+</body>
+</html>
