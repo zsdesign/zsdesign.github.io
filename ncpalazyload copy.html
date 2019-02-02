@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet"> -->
+
+    <!-- pure框架 -->
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css" integrity="sha384-CCTZv2q9I9m3UOxRLaJneXrrqKwUNOzZ6NGEUMwHtShDJ+nCoiXJCAgi05KfkLGY" crossorigin="anonymous">
+
+<!--     <link rel="stylesheet" type="text/css" href="css/pure.css"> -->
+
+    <!-- pure响应grid -->
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-responsive-min.css">
+
+
+    <!-- iconfont -->
+
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_813008_au0kgo0z8gd.css">
+
+    <link rel="stylesheet" href="css/layouts/marketing.css">
+
+    <!-- AniJS-CSS -->
+
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+
+
+<meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/animate.min.css">
+
+
+
+
+
+
+
+    <style type="text/css">
+
+
+        .pure-img-responsive {
+        max-width: 100%;
+        height: auto;
+        }
+
+        .scontent {
+        margin: 0 auto;
+        padding: 0 1em;
+        max-width: 800px;
+        margin-bottom: 50px;
+        line-height: 1.6em;
+        /*transition: all 0.5s;*/
+        }
+
+        .lcontent {
+        margin: 0 auto;
+        padding: 0 0em;
+        max-width: 1200px;
+        margin-bottom: 50px;
+        line-height: 1.6em;
+        /*align-content: right;*/
+        /*transition: all 0.5s;*/
+        }
+
+        .headbarhover{
+/*            background: red;*/
+            /*height: 100px;*/
+            transition: all 0.5s;
+            /*transition-timing-function: ease;*/
+/*            -moz-transition: all 1s;
+            -webkit-transition: all 1s;
+            -o-transition:all 1s;*/
+        }
+        
+        .headbarhover:hover{
+/*            background: green;*/
+            font-size: 110%;
+
+/*            height: 200px;*/
+        }
+
+/*        .logohover{
+        transition: all 0.5s;
+
+        transition-timing-function: ease;
+        }
+
+        .logohover:hover{
+        font-size: 120%;
+        font-size: 1.6em;
+        }*/
+
+        .hvr-grow {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        }
+
+        .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        }
+
+        .hvr-logogrow {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        }
+        .hvr-logogrow:hover, .hvr-logogrow:focus, .hvr-logogrow:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        }
+
+
+        .hvr-cardgrow {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        }
+
+        .hvr-cardgrow:hover, .hvr-grow:focus, .hvr-grow:active {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+        }
+
+
+
+
+
+    	   h3{
+        font-family: arial, sans-serif;
+        font-size: 1em;
+        font-weight: 100;
+        letter-spacing: 0.2em;
+        word-spacing: 0em;
+        line-height: 1.2em;
+        color: #333333;
+            }
+
+            h4{
+        font-family: arial, sans-serif;
+        font-size: 2.6em;
+        font-weight: 900;
+        letter-spacing: -0.012em;
+        word-spacing: -0.06em;
+        line-height: 1.2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        color: #333333;
+            }
+
+            h5{
+        font-family: sans-serif;
+        font-size: 2em;
+        font-weight: 500;
+        letter-spacing: -0.002em;
+        word-spacing: -0.02em;
+        line-height: 1.3em;
+        margin-top: 0.8em;
+        margin-bottom: 1.2em;
+        color: #333333;
+            }
+
+        	p{
+        font-family: sans-serif;
+        font-size: 1em;
+        letter-spacing: 0em;
+        color: #555555 ;
+        line-height: 1.6em
+        	}
+
+
+
+
+
+    </style>
+
+
+
+
+
+
+
+    <script src="jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+
+
+
+
+
+    <title>NCPA</title>
+
+
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body style="margin: 0; padding: 0; background-color: rgb(255,255,255,0);">
+
+
+
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed" style="background-color: rgba(255,255,255,0); height: 3em">
+        <a class="pure-menu-heading hvr-logogrow" style="color: rgb(0,0,0); transition: all 0.5s; margin: 0.2em" href="index.html"> 
+            <img src="img/zsface.png " style="height: 2em">
+        </a>
+
+        <ul class="pure-menu-list" style="font-size: 77% ;" >
+
+<!--             <li class="pure-menu-item pure-menu-selected" ><a href="#" class="pure-menu-link" ">PROJECTS</a></li> -->
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link hvr-grow" style="color: #000000;">WORKS</a></li>
+           <!--  <li class="pure-menu-item"><a href="#" class="pure-menu-link hvr-grow">BLOG</a></li> -->
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link hvr-grow">ABOUT</a></li>
+        </ul>
+    </div>
+</div>
+
+
+        
+
+
+
+
+<div class="scontent lazy wow animated fadeInUp">
+<div clas="pure-g">
+<div class="pure-u-1"> 
+<br><br><br>
+<h5> <b> Date Says </b> <br> Bigdate Research and UX Design for Nation Center for Performaning Arts</h5>
+<p>
+Client / Workshop, Concept Project <br>
+Time / Mid 2017 <br> 
+MyRole / Direct Designer <br>
+<p>
+<br>
+
+<h5>Brief</h5>
+<p> Beijing Philhamonic Association, in which are classic musicians and music fans. The purpose of the association is to communicate and review concerts, operas and dramas. In the daily I found some opportunities to enhance the experience from booking to backing home. Then I decided to do this concept project to find out the realities and new possibilities of what the experience will be. </p>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/e8e8e8.png">
+<!-- <p style="text-align: right;">This is referance about the image.</p> -->
+</div>
+          
+
+<div class="scontent lazy wow animated fadeInUp">
+<div class="pure-u-1"> 
+<h5>Process</h5>
+<p> Beijing Philhamonic Association, in which are classic musicians and music fans. The purpose of the association is to communicate and review concerts, operas and dramas. In the daily I found some opportunities to enhance the experience from booking to backing home. Then I decided to do this concept project to find out the realities and new possibilities of what the experience will be. </p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/process.png">
+<!-- <p style="text-align: right;">This is referance about the image.</p> -->
+</div>
+
+
+<div class="scontent lazy wow animated fadeInUp">
+<div class="pure-u-1"> 
+<h5>Big Date Research </h5>
+<p> 
+From Sina Weibo I got labels of 34845 users who followed NCPA. Then I built the datebase with their name, the numer of follower and their labels. (All the information are published by the users, which is not private.)</p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/bigdate1.png">
+<!-- <p style="text-align: right;">This is referance about the image.</p> -->
+</div>
+
+
+
+
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/bigdate2.png">
+</div>
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/bigdateabs.png">
+</div>
+
+<div class="scontent lazy wow animated fadeInUp">
+<div class="pure-u-1"> 
+<p> 
+- 34845 followers of NCPA who are active were analyzed.
+<br>
+- Most of them are females.
+<br>
+- As for age, most of them are young.</p>
+</div>
+</div>
+
+
+
+<div class="scontent lazy wow animated fadeInUp">
+<div class="pure-u-1"> 
+<h5>Big Date Visualization</h5>
+<p> 
+From Sina Weibo I got labels of 34845 users who followed NCPA. Then I built the datebase with their name, the numer of follower and their labels. (All the information are published by the users, which is not private.)</p>
+</div>
+</div>
+
+
+
+<div class="scontent lazy wow animated fadeInUp">
+<div class="pure-u-1"> 
+<h5>The Social Network</h5>
+<p> 
+<b>Labels are people's bridges in social activities.</b> I input the datebase to Gephi and dim users as source, dim labels as target, dim the number of users’ follower as weight. I choosed the force atlas to processing the date. With the effect of garvity, those points will move to this graphic. If more users has a same label, the label will become bigger.</p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/bigdatevis1.png">
+</div>
+
+
+
+<div class="scontent lazy wow animated fadeInUp">
+<div class="pure-u-1"> 
+<h5>Jobs</h5>
+<p> 
+<b>Most of the active classical music listeners are professionals.</b> I got the Job labels from the datebase then I input them to tableau and got this graphic. Which helps know the job stracture of the users.</p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/bigdatevis2.png">
+</div>
+
+
+
+<div class="scontent lazy wow animated fadeInUp">
+<div class="pure-u-1"> 
+<h5>Location</h5>
+<p> 
+<b>There are about 100,000 listeners of active classical music in China.</b> I got the location labels from the datebase then I convert the locaton to latitude and longitude. Finally, I input them to tableau and got this graphic. Where are the followers of NCPA.</p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/bigdatevis3.png">
+</div>
+
+
+<div class="scontent lazy wow animated fadeInUp">
+<div class="pure-u-1"> 
+<h5>Interview Research</h5>
+<p> In order to get a specific user portrait, I conducted a user interview.The following are user interview outlines and user interview notes.</p>
+</div>
+</div>
+
+
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/interview1.png">
+</div>
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/interview2.png">
+</div>
+
+<div class="scontent lazy wow animated fadeInUp">
+<div class="pure-u-1"> 
+<h5>Persona</h5>
+<p> Combine Big Date Research and Interview Research </p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/persona.png">
+</div>
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/persona2.png">
+</div>
+
+<div class="scontent lazy wow animated fadeInUp">
+<div class="pure-u-1"> 
+<h5>Self Experience</h5>
+<p> 
+I experienced almost 100 concerts and found some problems: <br>
+- The ticketing system is lagging behind in the current Internet era. <br>
+- Publications of the National Center for theatrical show have very limited dissemination and do not exert their due value. <br>
+- Lack of audience community construction is not conducive to maintaining user stickiness. </p>
+</div>
+</div>
+
+
+<div class="scontent lazy wow animated fadeInUp">
+<div class="pure-u-1"> 
+<h5>A Greenhands' Journey Map</h5>
+<p> Combine Big Date Research and Interview Research </p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/journey.png">
+</div>
+
+
+<div class="scontent lazy wow animated fadeInUp">
+<div class="pure-u-1"> 
+<h5>Design Defination</h5>
+<p> - <b>Ticket booking system </b>for audiance of all stages, which helps people book tickets easily and of satisfaction,and become more comfortable during the way. <br>
+- <b>Concert-hall service system </b>for audiance of all stages,which helps people get essiential information fast and convenient, during the experience from booking to back home. <br>
+- <b>Audiances community system </b>building for audience of all stages,which helps enhance the communication around audiances andpeformers to stronger the user loyalty. <br>
+</p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/designdefine.png">
+</div>
+
+<div class="scontent lazy wow animated fadeInUp">
+<div class="pure-u-1"> 
+<h5>Ideation</h5>
+<p> Combine Big Date Research and Interview Research </p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/ideation.png">
+</div>
+
+
+<div class="scontent lazy wow animated fadeInUp">
+<div class="pure-u-1"> 
+<h5>Prototype</h5>
+<p> The home page is presented in the form of a card, with smart recommendations as the main body, allowing the user to directly obtain the required information at the corresponding time.
+When the user is listening to a concert, the card of the concert is topped, and after clicking, the information of the concert is presented in a dark mode, avoiding interference with other people by using the mobile phone to illuminate the show folding.
+At the same time, because the network signal is shielded during performance of the concert hall, the user does not browse other information.
+In addition, smart recommendations, friend dynamics, and operational pushes are presented in the form of cards. </p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/prototype1.png">
+</div>
+
+
+<div class="scontent lazy wow animated fadeInUp">
+<div class="pure-u-1"> 
+<p> In the performance, the top position is the operating position, including smart recommendation and advertising.
+Performances are categorized by venue and time, and users can quickly find the desired performance.
+In the show introduction interface, there are recommendations from experienced people to help novices choose to perform.
+The ticket purchase process can be completed in one page, with the choice of screenings, seat selection and payment completed. </p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/prototype2.png">
+</div>
+
+
+<div class="scontent lazy wow animated fadeInUp">
+<div class="pure-u-1"> 
+<p> Talks is an interactive community for fans to increase user interaction and stickiness.</p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/prototype3.png">
+</div>
+
+
+<div class="scontent lazy wow animated fadeInUp">
+<div class="pure-u-1"> 
+<p> On the Profile page, you can quickly find bookings and collections.</p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/prototype4.png">
+</div>
+
+<div class="scontent lazy wow animated fadeInUp">
+<div class="pure-u-1"> 
+<h5>Moodboard</h5>
+<p> Define the color by moodboard </p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/moodboard.png">
+</div>
+
+<div class="scontent lazy wow animated fadeInUp">
+<div class="pure-u-1"> 
+<h5>Grid System Build</h5>
+<p> Summarizing the prototype and information hierarchy construction,I built the grid system as a standard for the user interface. </p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/gridsystem.png" style="width: 500px" align="Center">
+</div>
+
+
+<div class="scontent lazy wow animated fadeInUp">
+<div class="pure-u-1"> 
+<h5>User Interface</h5>
+<p> In the design of User interface, I adopted a minimalist design in order to maximize the content. At the same time, it followed the ios design specification. </p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/icon.png">
+</div>
+
+<div class="lcontent lazy wow animated fadeInUp">
+<img class="pure-img" src="img/ncpa/ui.png">
+</div>
+
+
+
+<br><br><br>
+
+
+
+
+
+
+<div class="lcontent lazy wow animated fadeInUp" style="margin-bottom:0px;">
+<div clas="pure-g">
+<div class="pure-u-1 hvr-cardgrow"> 
+<div class="scontent lazy wow animated fadeInUp">
+<h5> Next: <br> <b> Emoji Works: </b>  Branding Build for Student Union.</h5>
+</div>
+<img class="pure-img" src="img/meiesu/meiesuhalf.png">
+</div>
+</div>
+</div>
+
+
+
+
+
+<!-- Anijs -->
+<script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>   
+  <!-- Include to use $addClass, $toggleClass or $removeClass -->
+<script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="./assets/js/jquery.lazy.min.js"></script>
+  <script src="./assets/js/wow.min.js"></script>
+  <script>
+    $(function () {
+      new WOW().init();
+      $('.lazy').Lazy();
+    })
+  </script>
+</body>
+
+</body>
+</html>
