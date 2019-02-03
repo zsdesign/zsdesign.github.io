@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet"> -->
+
+    <!-- pure框架 -->
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css" integrity="sha384-CCTZv2q9I9m3UOxRLaJneXrrqKwUNOzZ6NGEUMwHtShDJ+nCoiXJCAgi05KfkLGY" crossorigin="anonymous">
+
+<!--     <link rel="stylesheet" type="text/css" href="css/pure.css"> -->
+
+    <!-- pure响应grid -->
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-responsive-min.css">
+
+
+    <!-- iconfont -->
+
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_813008_au0kgo0z8gd.css">
+
+    <link rel="stylesheet" href="css/layouts/marketing.css">
+
+    <!-- AniJS-CSS -->
+
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+
+
+<meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/animate.min.css">
+
+
+
+
+
+
+
+    <style type="text/css">
+
+
+        .pure-img-responsive {
+        max-width: 100%;
+        height: auto;
+        }
+
+        .scontent {
+        margin: 0 auto;
+        padding: 0 1em;
+        max-width: 800px;
+        margin-bottom: 50px;
+        line-height: 1.6em;
+        /*transition: all 0.5s;*/
+        }
+
+        .lcontent {
+        margin: 0 auto;
+        padding: 0 0em;
+        max-width: 1200px;
+        margin-bottom: 50px;
+        line-height: 1.6em;
+        /*align-content: right;*/
+        /*transition: all 0.5s;*/
+        }
+
+        .headbarhover{
+/*            background: red;*/
+            /*height: 100px;*/
+            transition: all 0.5s;
+            /*transition-timing-function: ease;*/
+/*            -moz-transition: all 1s;
+            -webkit-transition: all 1s;
+            -o-transition:all 1s;*/
+        }
+        
+        .headbarhover:hover{
+/*            background: green;*/
+            font-size: 110%;
+
+/*            height: 200px;*/
+        }
+
+/*        .logohover{
+        transition: all 0.5s;
+
+        transition-timing-function: ease;
+        }
+
+        .logohover:hover{
+        font-size: 120%;
+        font-size: 1.6em;
+        }*/
+
+        .hvr-grow {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        }
+
+        .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        }
+
+        .hvr-logogrow {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        }
+        .hvr-logogrow:hover, .hvr-logogrow:focus, .hvr-logogrow:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        }
+
+
+        .hvr-cardgrow {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        }
+
+        .hvr-cardgrow:hover, .hvr-grow:focus, .hvr-grow:active {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+        }
+
+
+
+
+
+    	   h3{
+        font-family: arial, sans-serif;
+        font-size: 1em;
+        font-weight: 100;
+        letter-spacing: 0.2em;
+        word-spacing: 0em;
+        line-height: 1.2em;
+        color: #333333;
+            }
+
+            h4{
+        font-family: arial, sans-serif;
+        font-size: 2.6em;
+        font-weight: 900;
+        letter-spacing: -0.012em;
+        word-spacing: -0.06em;
+        line-height: 1.2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        color: #333333;
+            }
+
+            h5{
+        font-family: sans-serif;
+        font-size: 2em;
+        font-weight: 500;
+        letter-spacing: -0.002em;
+        word-spacing: -0.02em;
+        line-height: 1.3em;
+        margin-top: 0.8em;
+        margin-bottom: 1.2em;
+        color: #333333;
+            }
+
+        	p{
+        font-family: sans-serif;
+        font-size: 1em;
+        letter-spacing: 0em;
+        color: #555555 ;
+        line-height: 1.6em
+        	}
+
+
+
+
+
+    </style>
+
+
+
+
+
+
+
+    <script src="jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+
+
+
+
+
+    <title>Emoji Works Branding Design for Student Union</title>
+
+
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body style="margin: 0; padding: 0; background-color: rgb(255,255,255,0);">
+
+
+
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed" style="background-color: rgba(255,255,255,0); height: 3em">
+        <a class="pure-menu-heading hvr-logogrow" style="color: rgb(0,0,0); transition: all 0.5s; margin: 0.2em" href="index.html"> 
+            <img src="img/zsface.png " style="height: 2em">
+        </a>
+
+        <ul class="pure-menu-list" style="font-size: 77% ;" >
+
+<!--             <li class="pure-menu-item pure-menu-selected" ><a href="#" class="pure-menu-link" ">PROJECTS</a></li> -->
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link hvr-grow" style="color: #000000;">WORKS</a></li>
+           <!--  <li class="pure-menu-item"><a href="#" class="pure-menu-link hvr-grow">BLOG</a></li> -->
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link hvr-grow">ABOUT</a></li>
+        </ul>
+    </div>
+</div>
+
+
+        
+
+
+
+
+<div class="scontent lazy wow animated fadeIn">
+<div clas="pure-g">
+<div class="pure-u-1"> 
+<br><br><br>
+<h5> <b> Emoji Works </b> <br> Branding Design for Student Union</h5>
+<p>
+Client / China University of Mining and Technology, Beijing <br>
+Time / Mid 2016 - Late 2017 <br> 
+MyRole / Design Director <br>
+<p>
+<br>
+
+<h5>Brief</h5>
+<p> In the thired year of my university, with passion and love, I designed brand for my student union. During all kinds of activities, The brand has been a colorful part of every student’s life. In this part, I will show you two relative branding projects </p>
+</div>
+</div>
+</div>
+
+
+<div class="lcontent lazy wow animated fadeIn">
+<img class="pure-img" src="img/ncpa/e8e8e8.png">
+</div>
+          
+
+<div class="scontent lazy wow animated fadeIn">
+<div class="pure-u-1"> 
+<h5>About MEIESU</h5>
+<p> This Student Union is belonged to the School of Mechanical Electronic and Information Engineering in my University.MEIESU is full of cohesion as well as family love. </p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeIn">
+<img class="pure-img" src="img/meiesu/about.png">
+</div>
+
+<div class="scontent lazy wow animated fadeIn">
+<div class="pure-u-1"> 
+<h5>Research</h5>
+<p> This Student Union is belonged to the School of Mechanical Electronic and Information Engineering in my University.MEIESU is full of cohesion as well as family love. </p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeIn">
+<img class="pure-img" src="img/meiesu/research.png">
+</div>
+
+
+<div class="scontent lazy wow animated fadeIn">
+<div class="pure-u-1"> 
+<h5>Design Defination</h5>
+<p> - Feelings of colorful, development, serious, science and open-mind. <br>
+- Quick mind connection to school. <br>
+- VI to enhance the imagination. <br>
+- WeChat Official Accounts Build to strong the connection.</p>
+</div>
+</div>
+
+<div class="scontent lazy wow animated fadeIn">
+<div class="pure-u-1"> 
+<h5>Design Process</h5>
+<p> MEIE Students Union connect students and teachers by holding activities.
+I believe the branding design is to service those three parts.
+However, I did not decided the design direction by traditional mood board,
+I did the deduction by emoji! Because emoji is abstruct, which suits an abstruct logo with many meanings.</p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeIn">
+<img class="pure-img" src="img/meiesu/thinking.png">
+</div>
+
+<div class="lcontent lazy wow animated fadeIn">
+<img class="pure-img" src="img/meiesu/logoprocess.png">
+</div>
+
+<div class="scontent lazy wow animated fadeIn">
+<div class="pure-u-1"> 
+<h5>Concept: Positive Minings</h5>
+<p>
+The design has many positive meanings, which strong the spritry of the student union.<br>
+<b>Four Leaf Clover Flower:</b> Love, health, glory and riches. which shows the best wish to students.<br>
+<b>Gear:</b> Most of the students are major in engineering.<br>
+<b>Opening Book: </b>Students have to emphasis the importance of learning forever.<br></p>
+</div>
+</div>
+
+
+<div class="lcontent lazy wow animated fadeIn">
+<img class="pure-img" src="img/meiesu/concept1.png">
+</div>
+
+
+
+<div class="scontent lazy wow animated fadeIn">
+<div class="pure-u-1"> 
+<h5>Concept: Art With Science</h5>
+<p>
+In the design, I fully apply the theory of Fibonacci curve, which describes the perfect golden ratio in the nature mathematically. I polished the every element for a long time, and finally make them in the rule of golden ration, which is full of rational beauty as well as perceptual beauty. It is welcomed and believed by everyone. Moreover, it has feelings of symphony and development. 
+<br>I choose “Source Han Sans” as the typeface, the present of which is simple construction and some humanistic feeling, Which is of highly identity and some serious. Moreover the type is open source which is full of sharing spirit. The Typeface is deeply suit the logo and the spirit of MEIESU. 
+</p>
+</div>
+</div>
+
+
+<div class="lcontent lazy wow animated fadeIn">
+<img class="pure-img" src="img/meiesu/concept2.png">
+</div>
+
+<div class="scontent lazy wow animated fadeIn">
+<div class="pure-u-1"> 
+<h5>Concept: Hands to Hands, Hearts to Hearts!</h5>
+<p>
+On the left is the logo of our school. On the right is the logo of the student union. These two signs need to have strong ties, so that the two signs can be associated with each other.
+<br>The meanings parallel with each other, the two logos have a same composition. People connect them easily.
+</p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeIn">
+<img class="pure-img" src="img/meiesu/concept3.png">
+</div>
+
+<div class="scontent lazy wow animated fadeIn">
+<div class="pure-u-1"> 
+<h5>Branding Book</h5>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeIn">
+<img class="pure-img" src="img/meiesu/brandingbook.png">
+</div>
+
+
+
+<div class="scontent lazy wow animated fadeIn">
+<div class="pure-u-1"> 
+<h5>About Wave Studio</h5>
+<p> WAVE is an Internet media of school and student union.
+It pushs daily news for campus students. 
+I designed the logo with the same strain of MEIESU. </p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeIn">
+<img class="pure-img" src="img/meiesu/aboutwave.png">
+</div>
+
+
+<div class="scontent lazy wow animated fadeIn">
+<div class="pure-u-1"> 
+<h5>Inspiration</h5>
+<p> Based on the elements, from M to W.
+Push News -> The red dot.</p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeIn">
+<img class="pure-img" src="img/meiesu/waveprocess.png">
+</div>
+
+<div class="scontent lazy wow animated fadeIn">
+<div class="pure-u-1"> 
+<h5>Detail Optimization</h5>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeIn">
+<img class="pure-img" src="img/meiesu/ut.png">
+</div>
+
+<div class="lcontent lazy wow animated fadeIn">
+<img class="pure-img" src="img/meiesu/wavelogo.png">
+</div>
+
+
+<div class="scontent lazy wow animated fadeIn">
+<div class="pure-u-1"> 
+<h5>Logo Types</h5>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeIn">
+<img class="pure-img" src="img/meiesu/logotypes.png">
+</div>
+
+<div class="scontent lazy wow animated fadeIn">
+<div class="pure-u-1"> 
+<h5>Memo Design</h5>
+<p>   </p>
+</div>
+</div>
+
+
+<div class="lcontent lazy wow animated fadeIn">
+<img class="pure-img" src="img/meiesu/wavememe.png">
+</div>
+
+
+<div class="scontent lazy wow animated fadeIn">
+<div class="pure-u-1"> 
+<h5>Utilization</h5>
+<p>   </p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeIn">
+<img class="pure-img" src="img/meiesu/utl.png">
+</div>
+
+<div class="scontent lazy wow animated fadeIn">
+<div class="pure-u-1"> 
+<h5>Concept: With Wave Wish</h5>
+<p>   </p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeIn">
+<img class="pure-img" src="img/meiesu/waveconcept.png">
+</div>
+
+<div class="scontent lazy wow animated fadeIn">
+<div class="pure-u-1"> 
+<h5>Concept: Origin</h5>
+<p>
+The origin is the beginning of all things. It is the most basic element that makes up the world. It is also our original heart. It implies endless possibilities of inspiration and infinite development of micro-inspiration. In the coming days, the micro-tide will not forget the beginning of the heart and move forward.
+</p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeIn" align="center">
+<img class="pure-img" src="img/meiesu/gif1.gif" >
+</div>
+
+<div class="scontent lazy wow animated fadeIn">
+<div class="pure-u-1"> 
+<h5>Concept: Connection</h5>
+<p>
+The points move into lines and the lines move into faces. The dots around the marks represent each push of micro-thoughts. Dots surround the heart-shaped body, cycle around, cycle indefinitely, and symbolize the inexhaustible driving force of micro-waves. In addition, the combination of the dots and the heart-shaped subject, the virtual reality, makes the picture rich and vivid, symbolizing the micro-tide, and symbolizing the youthful vitality of the electromechanical man.
+</p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeIn" align="center">
+<img class="pure-img" src="img/meiesu/gif2.gif">
+</div>
+
+<div class="scontent lazy wow animated fadeIn">
+<div class="pure-u-1"> 
+<h5>Tagline: Around You & Share With You</h5>
+<p>
+We are always on the road. As early as the heart is still us, purely to accompany every beautiful moment in your university, we will be more careful, continue to explore the worthwhile material, the LOGO interpretation of the spirit into each push.
+</p>
+</div>
+</div>
+
+<div class="lcontent lazy wow animated fadeIn" align="center">
+<img class="pure-img" src="img/meiesu/gif3.gif">
+</div>
+
+
+<div class="scontent lazy wow animated fadeIn">
+<div class="pure-u-1"> 
+<h5>Result</h5>
+<p>
+Every year, more than 100 people join MEIESU. <br>
+Wave Studio is valued at more than 4,000,000 RMB. <br>
+During all kinds of activities, The brand has been a colorful part of every student’s life.</p>
+</div>
+</div>
+
+
+
+
+
+<br><br><br>
+
+
+<!-- HERE IS THE NEXT -->
+
+
+
+<div class="lcontent lazy wow animated fadeIn" style="margin-bottom:0px;">
+<div clas="pure-g">
+<div class="pure-u-1 hvr-cardgrow"> 
+<div class="scontent lazy wow animated fadeIn">
+<h5> Next: <br> <b> Emoji Works: </b>  Branding Build for Student Union.</h5>
+</div>
+<img class="pure-img" src="img/meiesu/meiesuhalf.png">
+</div>
+</div>
+</div>
+
+
+
+
+
+<!-- Anijs -->
+<script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>   
+  <!-- Include to use $addClass, $toggleClass or $removeClass -->
+<script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="./assets/js/jquery.lazy.min.js"></script>
+  <script src="./assets/js/wow.min.js"></script>
+  <script>
+    $(function () {
+      new WOW().init();
+      $('.lazy').Lazy();
+    })
+  </script>
+</body>
+
+</body>
+</html>
