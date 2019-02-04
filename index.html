@@ -24,7 +24,7 @@
     
     <!-- Video Play -->
     <script src="http://api.html5media.info/1.1.8/html5media.min.js"></script>
-    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"> </script>
+     <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js" type="text/javascript" charset="utf-8"></script>
 
     <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -373,20 +373,11 @@
       $('.lazy').Lazy();
     })
   </script>
-  
+
  <script>
-      wx.config({
-        // 配置信息, 即使不正确也能使用 wx.ready
-        debug: false,
-        appId: 'gh_1a8c118653f8',
-        timestamp: 1,
-        nonceStr: '',
-        signature: '',
-        jsApiList: []
-    });
-    wx.ready(function() {
-        $("#video")[0].play();
-    });
+document.addEventListener("WeixinJSBridgeReady",function() { 
+    document.getElementById('vido_one').play(); 
+}, false);
 </script>
 
 
