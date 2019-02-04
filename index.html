@@ -24,6 +24,7 @@
     
     <!-- Video Play -->
     <script src="http://api.html5media.info/1.1.8/html5media.min.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"> </script>
 
     <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -269,10 +270,10 @@
     <a href="ncpalazyload.html">
     <div class="pure-u-1 pure-u-md-1-2 hvr-cardgrow " style="float: left; background-color: #ffffff;">
     <div style="padding: 8px;" class="lazy wow animated fadeInUp">
-    <img src="img/ncpa/ncpa600600.gif" style="width: 100%">
-    <!-- <video src="img/ncpa/ncpa.mp4" autoplay="autoplay" loop="loop" width="100%" muted="muted" preload></video> -->
+    <!-- <img src="img/ncpa/ncpa600600.gif" style="width: 100%"> -->
+    <video src="img/ncpa/ncpa.mp4" autoplay="autoplay" loop="loop" width="100%" muted="muted" preload></video>
     <div style="height: 8em;"  class="lazy wow animated fadeInUp" >
-    <h6><b>Date Says</b>
+    <h6><u><b>Date Says</b></u>
     <br>Bigdate Research and UX Design for Nation Center for Performaning Arts </h6>
     </div>
     </div>
@@ -282,11 +283,11 @@
     <a href="meiesu.html">
     <div class="pure-u-1 pure-u-md-1-2 hvr-cardgrow " style="float: left;">
     <div style="padding: 8px;" class="lazy wow animated fadeInUp">
-     <!-- <video src="img/meiesu/wavefrontvideo.mp4" autoplay="autoplay" loop="loop" width="100%" muted="muted" preload style="width: 100%;"></video> -->
-    <img src="img/meiesu/frontgif.gif" style="width: 100%;">
+     <video src="img/meiesu/wavefrontvideo.mp4" autoplay="autoplay" loop="loop" width="100%" muted="muted" preload style="width: 100%;"></video>
+    <!-- <img src="img/meiesu/frontgif.gif" style="width: 100%;"> -->
     <!-- <img src="img/800800.png" style="width: 100%;"> -->
     <div style="height: 8em;" class="lazy wow animated fadeInUp">
-    <h6><b>Emoji Works</b>
+    <h6><u><b>Emoji Works</b></u>
     <br>Branding Design for Student Union</h6>
     </div>
     </div>
@@ -299,7 +300,7 @@
     <div style="padding: 8px;" class="lazy wow animated fadeInUp">
     <img src="img/lizi/lizi.gif" style="width: 100%">
     <div style="height: 8em;" class="lazy wow animated fadeInUp">
-    <h6><b>Research More Scale More</b>
+    <h6><u><b>Do Research</b></u>
     <br>Branding Design for Lizi Studio</h6>
     </div>
     </div>
@@ -311,7 +312,7 @@
     <div style="padding: 8px;" class="lazy wow animated fadeInUp">
     <img src="img/donuttypo/donuttypo.gif" style="width: 100%">
     <div style="height: 8em;" class="lazy wow animated fadeInUp">
-    <h6><b>Creative Theory</b>
+    <h6><u><b>Creative Theory</b></u>
     <br>Typography Design for New Oriental Group</h6>
     </div>
     </div>
@@ -323,8 +324,20 @@
     <div style="padding: 8px;" class="lazy wow animated fadeInUp">
     <img src="img/donutmotion/donutlogo.gif" style="width: 100%">
     <div style="height: 8em;" class="lazy wow animated fadeInUp">
-    <h6><b>Moving</b>
+    <h6><u><b>Moving</b></u>
     <br>Motion Graphic for New Oriental Donut</h6>
+    </div>
+    </div>
+    </div>
+    </a>
+
+    <a href="ncpalazyload.html">
+    <div class="pure-u-1 pure-u-md-1-2 hvr-cardgrow " style="float: left;">
+    <div style="padding: 8px;" class="lazy wow animated fadeInUp">
+    <img src="img/donutmotion/donutlogo.gif" style="width: 100%">
+    <div style="height: 8em;" class="lazy wow animated fadeInUp">
+    <h6><u><b>Moding</b></u>
+    <br>3D Experiement Designs for Donut</h6>
     </div>
     </div>
     </div>
@@ -360,5 +373,22 @@
       $('.lazy').Lazy();
     })
   </script>
+  
+ <script>
+      wx.config({
+        // 配置信息, 即使不正确也能使用 wx.ready
+        debug: false,
+        appId: 'gh_1a8c118653f8',
+        timestamp: 1,
+        nonceStr: '',
+        signature: '',
+        jsApiList: []
+    });
+    wx.ready(function() {
+        $("#video")[0].play();
+    });
+</script>
+
+
 </body>
 </html>
