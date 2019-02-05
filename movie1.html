@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- pure框架 -->
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css" integrity="sha384-CCTZv2q9I9m3UOxRLaJneXrrqKwUNOzZ6NGEUMwHtShDJ+nCoiXJCAgi05KfkLGY" crossorigin="anonymous">
+
+<!--     <link rel="stylesheet" type="text/css" href="css/pure.css"> -->
+
+    <!-- pure响应grid -->
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-responsive-min.css">
+
+
+    <!-- iconfont -->
+
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_813008_au0kgo0z8gd.css">
+    <link rel="stylesheet" href="css/layouts/marketing.css">
+
+    <!-- AniJS-CSS -->
+
+    <!-- <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css"> -->
+    
+    <!-- Video Play -->
+    <script src="html5media.min.js"></script>
+     <!-- <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js" type="text/javascript" charset="utf-8"></script> -->
+
+    <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+      <link rel="stylesheet" href="./assets/css/animate.min.css"> 
+
+    <script src="jquery.min.js"></script>
+    <meta charset="UTF-8">
+
+
+
+
+    <style type="text/css">
+
+
+        .pure-img-responsive {
+        max-width: 100%;
+        height: auto;
+        }
+
+        .scontent {
+        margin: 0 auto;
+        padding: 0 1em;
+        max-width: 800px;
+        margin-bottom: 50px;
+        line-height: 1.6em;
+        /*transition: all 0.5s;*/
+        }
+
+        .lcontent {
+        margin: 0 auto;
+        padding: 0 0em;
+        max-width: 1000px;
+        margin-bottom: 50px;
+        line-height: 1.6em;
+        /*align-content: right;*/
+        /*transition: all 0.5s;*/
+        }
+
+        .xlcontent {
+        margin: 0 auto;
+        padding: 0 0em;
+        max-width: 100%;
+        margin-bottom: 50px;
+        line-height: 1.6em;
+        /*align-content: right;*/
+        /*transition: all 0.5s;*/
+        }
+
+        .headbarhover{
+/*            background: red;*/
+            /*height: 100px;*/
+            transition: all 0.5s;
+            /*transition-timing-function: ease;*/
+/*            -moz-transition: all 1s;
+            -webkit-transition: all 1s;
+            -o-transition:all 1s;*/
+        }
+        
+        .headbarhover:hover{
+/*            background: green;*/
+            font-size: 110%;
+
+/*            height: 200px;*/
+        }
+
+/*        .logohover{
+        transition: all 0.5s;
+
+        transition-timing-function: ease;
+        }
+
+        .logohover:hover{
+        font-size: 120%;
+        font-size: 1.6em;
+        }*/
+
+        .hvr-grow {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        }
+
+        .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        }
+
+        .hvr-logogrow {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        }
+        .hvr-logogrow:hover, .hvr-logogrow:focus, .hvr-logogrow:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        }
+
+
+        .hvr-cardgrow {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        }
+
+        .hvr-cardgrow:hover, .hvr-grow:focus, .hvr-grow:active {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+        }
+
+        .whitetext {
+            color: #dddddd;
+        }
+
+
+    	   h3{
+        font-family: arial, sans-serif;
+        font-size: 1em;
+        font-weight: 100;
+        letter-spacing: 0.2em;
+        word-spacing: 0em;
+        line-height: 1.2em;
+        color: #333333;
+            }
+
+            h4{
+        font-family: arial, sans-serif;
+        font-size: 2.6em;
+        font-weight: 900;
+        letter-spacing: -0.012em;
+        word-spacing: -0.06em;
+        line-height: 1.2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        color: #333333;
+            }
+
+            h5{
+        font-family: sans-serif;
+        font-size: 2em;
+        font-weight: 500;
+        letter-spacing: -0.002em;
+        word-spacing: -0.02em;
+        line-height: 1.3em;
+        margin-top: 0.8em;
+        margin-bottom: 1.2em;
+        color: #333333;
+            }
+
+            h6{
+        font-family: sans-serif;
+        font-size: 1.2em;
+        font-weight: 500;
+        letter-spacing: -0.001em;
+        word-spacing: -0.02em;
+        line-height: 1.5em;
+        margin-top: 0.8em;
+        margin-bottom: 1.2em;
+        color: #333333;
+            }
+
+
+        	p{
+        font-family: sans-serif;
+        font-size: 1em;
+        letter-spacing: 0em;
+        color: #555555 ;
+        line-height: 1.6em
+        	}
+
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+    <title>zsdesign.github.io</title>
+    <link rel="icon" href="img/ico.ico"/>
+
+
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body style="margin: 0; padding: 0; background-color: #000000;">
+
+
+
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed" style="background-color: rgba(255,255,255,0); height: 3em">
+        <a class="pure-menu-heading hvr-logogrow" style="color: rgb(0,0,0); transition: all 0.5s; margin: 0.2em" href="index.html"> 
+            <img src="img/zsfacew.png " style="height: 2em">
+        </a>
+
+        <ul class="pure-menu-list" style="font-size: 77% ;" >
+
+<!--             <li class="pure-menu-item pure-menu-selected" ><a href="#" class="pure-menu-link" ">PROJECTS</a></li> -->
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link hvr-grow" style="color: #e3e3e3;">WORKS</a></li>
+           <!--  <li class="pure-menu-item"><a href="#" class="pure-menu-link hvr-grow">BLOG</a></li> -->
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link hvr-grow" style="color: #e3e3e3;">ABOUT</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="scontent">
+<div clas="pure-g">
+<div class="pure-u-1" style="text-decoration-color:  #000000"> 
+<br><br><br>
+<h5 class="whitetext"> <b> From "B" to "V" </b> <br> Micro Movie "A Sunny Day"</h5>
+<p class="whitetext">
+Client / China University of Mining & Technology, Beijing <br>
+Time / Early 2016 - Mid 2016 <br> 
+MyRole / Visul Design Editing and Scoring <br>
+<p>
+<br>
+
+<h5 class="whitetext">Brief</h5>
+<p class="whitetext"> I have a great passion on movies. In my school life,I have viewed over 800 movies.
+In my school work, I have opportunities to lead my team to make movies.I will introduce my projects for you. 
+
+This is a micro movie about a love story. The movie was showed in the 2016 graduation ceremony.
+It made almost 1000 audiances laugh over 40 times in 15 minutes. 
+In this project,I did the work of visual design, editing and scoring, from
+May,2016 to Jun,2016.
+
+</p>
+</div>
+</div>
+</div>
+
+
+
+<div class="xlcontent">
+<img class="pure-img" style="width: 100%" src="img/movie/a1.jpg">
+</div>
+
+
+<div class="lcontent">
+<iframe width="1196" height="523" src="https://www.youtube.com/embed/24MOz8ADF0g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="xlcontent">
+<img class="pure-img" style="width: 100%" src="img/movie/a2.jpg">
+</div>
+
+<div class="xlcontent">
+<img class="pure-img" style="width: 100%" src="img/movie/a3.jpg">
+</div>
+
+<div class="xlcontent">
+<img class="pure-img" style="width: 100%" src="img/movie/a4.jpg">
+</div>
+
+<div class="xlcontent">
+<img class="pure-img" style="width: 100%" src="img/movie/a5.jpg">
+</div>
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Anijs -->
+<script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>   
+  <!-- Include to use $addClass, $toggleClass or $removeClass -->
+<script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="./assets/js/jquery.lazy.min.js"></script>
+  <script src="./assets/js/wow.min.js"></script>
+  <script>
+    $(function () {
+      new WOW().init();
+      $('.lazy').Lazy();
+    })
+  </script>
+
+
+
+</body>
+</html>
