@@ -1,0 +1,163 @@
+        .pure-img-responsive {
+        max-width: 100%;
+        height: auto;
+        }
+
+        .scontent {
+        margin: 0 auto;
+        padding: 0 1em;
+        max-width: 800px;
+        margin-bottom: 50px;
+        line-height: 1.6em;
+        /*transition: all 0.5s;*/
+        }
+
+        .lcontent {
+        margin: 0 auto;
+        padding: 0 0em;
+        max-width: 1000px;
+        margin-bottom: 50px;
+        line-height: 1.6em;
+        }
+
+        
+        .xlcontent {
+        margin: 0 auto;
+        padding: 0 0em;
+        max-width: 100%;
+        margin-bottom: 50px;
+        line-height: 1.6em;
+        }
+
+        .headbarhover{
+            transition: all 0.5s;
+        }
+        
+        .headbarhover:hover{
+            font-size: 110%;
+        }
+
+
+        .hvr-grow {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        }
+
+        .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        }
+
+        .hvr-logogrow {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        }
+        .hvr-logogrow:hover, .hvr-logogrow:focus, .hvr-logogrow:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        }
+
+        .hvr-cardgrow {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        }
+
+        .hvr-cardgrow:hover, .hvr-grow:focus, .hvr-grow:active {
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+        }
+
+
+        .whitetext {
+            color: #dddddd;
+        }
+
+/*header is h1*/
+
+           h1{
+        font-family: arial, sans-serif;
+        font-size: 1em;
+        font-weight: 100;
+        letter-spacing: 0.2em;
+        word-spacing: 0em;
+        line-height: 1.2em;
+        color: #333333;
+            }
+
+    	   h3{
+        font-family: arial, sans-serif;
+        font-size: 1em;
+        font-weight: 100;
+        letter-spacing: 0.2em;
+        word-spacing: 0em;
+        line-height: 1.2em;
+        color: #333333;
+            }
+
+            h4{
+        font-family: arial, sans-serif;
+        font-size: 2.6em;
+        font-weight: 900;
+        letter-spacing: -0.012em;
+        word-spacing: -0.06em;
+        line-height: 1.2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        color: #333333;
+            }
+
+            h5{
+        font-family: sans-serif;
+        font-size: 2em;
+        font-weight: 500;
+        letter-spacing: -0.002em;
+        word-spacing: -0.02em;
+        line-height: 1.3em;
+        margin-top: 0.8em;
+        margin-bottom: 1.2em;
+        color: #333333;
+            }
+
+            h6{
+        font-family: sans-serif;
+        font-size: 1.2em;
+        font-weight: 500;
+        letter-spacing: -0.001em;
+        word-spacing: -0.02em;
+        line-height: 1.5em;
+        margin-top: 0.8em;
+        margin-bottom: 1.2em;
+        color: #333333;
+            }
+
+
+        	p{
+        font-family: sans-serif;
+        font-size: 1em;
+        letter-spacing: 0em;
+        color: #555555 ;
+        line-height: 1.6em
+        	}
+
+    </style>
