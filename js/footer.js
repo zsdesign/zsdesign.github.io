@@ -1,0 +1,6 @@
+document.write("	<div class='pure-g lbox' style=' height: 128px;'>							")
+document.write("		<div class='pure-u-1' style='padding: 16px;'><hr></div>					")
+document.write("		<div class='pure-u-1' style='padding: 16px;'>							")
+document.write("			<span style='font-weight: 100;'> © zsdesign.github.io</span>		")
+document.write("		</div>																	")
+document.write("	</div>																		")

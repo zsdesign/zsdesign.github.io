@@ -1,0 +1,7 @@
+document.write("<div style='height: 64px; margin: auto; z-index: 1000; position: fixed; right: 0; left: 0; max-width: 1600px; padding-left: 16px; padding-right: 16px;'>")
+document.write("<a href='index.html'><img src='img/zsface.png' style='height: 32px; z-index: 998; position: relative; top: 16px; left: 14px;' ></a>")
+// document.write("<a href='index.html'><span style='float: right; position: relative; right: 20px; top: 22px; font-family: sans-serif;'>Connect</span></a>")
+// document.write("<a href='index.html'><span style='float: right; position: relative; right: 50px; top: 22px;font-family: sans-serif;'>Projects</span></a>")
+document.write("<span style='float: right; position: relative; right: 18px; top: 22px; font-family: sans-serif;'>Contact</span>")
+document.write("<span style='float: right; position: relative; right: 50px; top: 22px;font-family: sans-serif;'>Projects</span>")
+document.write("</div>")
