@@ -29,7 +29,7 @@
 #headerBg{
 	opacity: 1; 
 	width: 100%; 
-	background-color: gray; 
+	background-color: #FFF; 
 	height: 64px; 
 	position: fixed;
 }
@@ -152,17 +152,19 @@ function scrollEvStyleChange(scrollEvUpDownEvResult){
 			case 1:
 			// console.log("下滑效果");
 			document.getElementById("headerLink1").innerHTML = "下滑";
+			myMove();
 			break;
 
 			case 0:
 			// console.log("上滑效果");
 			document.getElementById("headerLink1").innerHTML = "上滑";
-			myMove();
+			myMove2();
 			break;
 		}
 	}
 }
 
+//当下滑
 
 function myMove() {
 	console.log("myMove");
@@ -174,9 +176,26 @@ function myMove() {
     if (pos == 64) {
       clearInterval(id);
     } else {
-      pos=pos+2; 
-      elem.style.top = pos + "px"; 
-      elem2.style.top = pos + "px"; 
+      pos=pos+1; 
+      elem.style.top = -pos + "px"; 
+      elem2.style.top = -pos + "px"; 
+    }
+  }
+}
+
+function myMove2() {
+	console.log("myMove2");
+  var elem = document.getElementById("headerBg");
+  var elem2 = document.getElementById("headerInner");   
+  var pos = 64;
+  var id = setInterval(frame, 2);
+  function frame() {
+    if (pos == 0) {
+      clearInterval(id);
+    } else {
+      pos=pos-2; 
+      elem.style.top = -pos + "px"; 
+      elem2.style.top = -pos + "px"; 
     }
   }
 }
