@@ -157,9 +157,28 @@ function scrollEvStyleChange(scrollEvUpDownEvResult){
 			case 0:
 			// console.log("上滑效果");
 			document.getElementById("headerLink1").innerHTML = "上滑";
+			myMove();
 			break;
 		}
 	}
+}
+
+
+function myMove() {
+	console.log("myMove");
+  var elem = document.getElementById("headerBg");
+  var elem2 = document.getElementById("headerInner");   
+  var pos = 0;
+  var id = setInterval(frame, 2);
+  function frame() {
+    if (pos == 64) {
+      clearInterval(id);
+    } else {
+      pos=pos+2; 
+      elem.style.top = pos + "px"; 
+      elem2.style.top = pos + "px"; 
+    }
+  }
 }
 
 
@@ -173,6 +192,8 @@ window.onscroll = function () {
   scrollEvStyleChange(scrollEvUpDownEvResult);
   }
 }
+
+
 
 
 
