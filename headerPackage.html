@@ -171,7 +171,7 @@ function myMove() {
   var elem = document.getElementById("headerBg");
   var elem2 = document.getElementById("headerInner");   
   var pos = 0;
-  var id = setInterval(frame, 2);
+  var id = setInterval(frame, 0);
   function frame() {
     if (pos == 64) {
       clearInterval(id);
@@ -188,12 +188,12 @@ function myMove2() {
   var elem = document.getElementById("headerBg");
   var elem2 = document.getElementById("headerInner");   
   var pos = 64;
-  var id = setInterval(frame, 2);
+  var id = setInterval(frame, 0);
   function frame() {
     if (pos == 0) {
       clearInterval(id);
     } else {
-      pos=pos-2; 
+      pos=pos-1; 
       elem.style.top = -pos + "px"; 
       elem2.style.top = -pos + "px"; 
     }
