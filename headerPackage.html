@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+	<!-- PURECSS-START -->
+	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css" integrity="sha384-CCTZv2q9I9m3UOxRLaJneXrrqKwUNOzZ6NGEUMwHtShDJ+nCoiXJCAgi05KfkLGY" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-responsive-min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- PURECSS-END -->
+
+	<!-- UTF-8-防止乱码-START -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- UTF-8-防止乱码-END -->
+
+	<!-- GLOBALCSS - START -->
+	<link rel="stylesheet" href="css/globalstyle.css">
+	<!-- GLOBALCSS - END -->
+
+	<!-- RESPONSIVEZS-START -->
+	<script src="js/responsiveZs.js"></script>
+	<!-- RESPONSIVEZS-END -->
+
+</head>
+
+
+<style type="text/css">
+
+#headerBg{
+	opacity: 1; 
+	width: 100%; 
+	background-color: gray; 
+	height: 64px; 
+	position: fixed;
+}
+
+#headerInner{
+	background-color: 
+	/*rgba(255,255,255,0); */
+	height: 64px; 
+	margin: auto; 
+	z-index: 1000; 
+	position: fixed; 
+	right: 0; 
+	left: 0; 
+	max-width: 1600px;
+}
+
+#headerIcon{
+	height: 32px; 
+	z-index: 998; 
+	position: relative; 
+	top: 16px; 
+	left: 14px;
+
+}
+
+#headerLink1{
+	float: right; 
+	position: relative; 
+	right: 18px; 
+	top: 22px; 
+	font-family: sans-serif;
+	color:black;
+	text-decoration : none;
+}
+
+#headerLink2{
+	float: right; 
+	position: relative; 
+	right: 50px; 
+	top: 22px;
+	font-family: sans-serif;
+	color:black;
+	text-decoration : none;
+}
+
+
+
+</style>
+
+<body>
+
+<div id='headerBg'></div>
+<div id='headerInner'>
+<a href=''><img id='headerIcon' src='img/zsface.png'></a>
+<a id='headerLink1' href=''><span>Contact</span>
+<a id='headerLink2' href=''><span>Projects</span></a>
+</div>
+
+
+<script>
+
+// 滚轮滚动的距页面上方的距离
+var scrollTop = 0;
+var scrollTopResult = 0;
+
+// 滚动事件 1位下滑 0为上滑
+var scrollEvUpDownEv = 0;
+var scrollEvUpDownEvResult = 0;
+
+// 效果事件-上下滑效果
+var scrollEvUpDownEvStyle = 0;
+
+
+function getScrollTop() {
+	//该函数获取触发滚轮事件时页面滚动的距离
+	//为了保证兼容性，这里取两个值，哪个有值取哪一个
+	var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+	// console.log("scrollTop"+scrollTop);
+	return scrollTop;
+}
+
+function getScrollEvUpDownEvRealTime(scrollTop){
+
+	// 该函数获得实时的上下滑动状态
+
+    if (scrollTop > scrollTopResult) {
+      scrollTopResult = scrollTop;
+      scrollEvUpDownEv = 1;
+      // console.log("scrollEvUpDownEv=" + scrollEvUpDownEv);
+    }
+
+    if (scrollTop < scrollTopResult) {
+      scrollTopResult = scrollTop;
+      scrollEvUpDownEv = 0;
+      // console.log("scrollEvUpDownEv=" + scrollEvUpDownEv);
+    }
+}
+
+
+function getScrollEvUpDownEvResult(scrollEvUpDownEv){
+
+	// 该函数获得页面上下滑动状态的结果
+
+	if (scrollEvUpDownEv != scrollEvUpDownEvResult) {
+		scrollEvUpDownEvResult = scrollEvUpDownEv;
+		// console.log("scrollEvUpDownEvResult=" + scrollEvUpDownEvResult);
+	}
+}
+
+
+function scrollEvStyleChange(scrollEvUpDownEvResult){
+
+	// 该函数根据上下滑动切换两种效果
+
+	if (scrollEvUpDownEvResult != scrollEvUpDownEvStyle) {
+		scrollEvUpDownEvStyle = scrollEvUpDownEvResult;
+		
+		switch(scrollEvUpDownEvStyle){
+			case 1:
+			// console.log("下滑效果");
+			document.getElementById("headerLink1").innerHTML = "下滑";
+			break;
+
+			case 0:
+			// console.log("上滑效果");
+			document.getElementById("headerLink1").innerHTML = "上滑";
+			break;
+		}
+	}
+}
+
+
+
+// 滚动事件
+window.onscroll = function () {
+  scrollTop = getScrollTop();
+  getScrollEvUpDownEvRealTime(scrollTop);
+  getScrollEvUpDownEvResult(scrollEvUpDownEv);
+  scrollEvStyleChange(scrollEvUpDownEvResult);
+}
+
+
+
+
+</script>
+
+
+<div class="pure-g" style="margin: auto; left: 0; right: 0; max-width: 1600px;">
+
+<!-- <img id="demo2" src="img/800800.png"><br> -->
+<img src="img/800800.png" style="width: 100%"><br>
+<img src="img/800800.png" style="width: 100%"><br>
+<img src="img/800800.png" style="width: 100%"><br>
+<img src="img/800800.png" style="width: 100%"><br>
+<img src="img/800800.png" style="width: 100%"><br>
+<img src="img/800800.png" style="width: 100%"><br>
+<img src="img/800800.png" style="width: 100%"><br>
+<img src="img/800800.png" style="width: 100%"><br>
+
+
+</div>
+
+
+</body>
+</html>
