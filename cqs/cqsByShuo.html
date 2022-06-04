@@ -1,0 +1,113 @@
+<html>
+  <head></head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0 atuo;
+    }
+    #imgDiv {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      /* height: 100vh; */
+    }
+    #imgDiv img {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      /* height: 800px; */
+      /* background: #ff0000; */
+      /* height: 10vh; */
+    }
+    #topPanel {
+      width: 100%;
+      height: 45px;
+      left: 0px;
+      top: 0px;
+      background: #ffffff;
+      line-height: 45px;
+      position: fixed;
+    }
+
+    #picker {
+      position: fixed;
+      right: 16px;
+      top: 12px;
+      height: 20px;
+      width: 100px;
+    }
+  </style>
+  <body style="background: #ffffff;">
+    <div id="topPanel">
+      <label for="inputFile" class="button" style="margin-left: 12px;"> </label>
+      <input type="file" id="inputFile" multiple="multiple" />
+      <button onclick="sub()" style="padding-left: 4px; padding-right: 4px;">
+        Upload
+      </button>
+      <input
+        id="picker"
+        type="color"
+        id="seed-color"
+        name="seed-color"
+        value="#ffffff"
+      />
+    </div>
+    <div><br /><br /><br /></div>
+    <div id="imgDiv"></div>
+
+    <script>
+      document.getElementById("picker").addEventListener("input", () => {
+        console.log(document.getElementById("picker").value);
+        // document.getElementById(
+        //   "topPanel"
+        // ).style.background = document.getElementById("picker").value;
+        document.getElementById(
+          "imgDiv"
+        ).style.background = document.getElementById("picker").value;
+      });
+
+      let imgarr = [];
+      var file = document.getElementById("inputFile");
+      let imgDiv = document.getElementById("imgDiv");
+      let wenjian = document.getElementById("wenjian");
+      let size1;
+      file.addEventListener("change", function (event) {
+        imgarr = [...file.files];
+        let arr = imgarr.map((v) => {
+          console.log(v.size, "size");
+          return v.size;
+        });
+        arr = arr.reduce((total, num) => {
+          return total + num;
+        });
+        wenjian.innerText = `Selected${imgarr.length}Files Sum${arr}KB`;
+      });
+
+      function sub() {
+        for (var i = 0; i < file.files.length; i++) {
+          let reader = new FileReader();
+          var file1 = file.files[i];
+          reader.readAsDataURL(file1);
+          reader.onload = function (result) {
+            imgDiv.innerHTML += '<img src="' + reader.result + '" alt=""/>';
+            // console.log(reader.result)
+          };
+        }
+        console.log(file.files);
+      }
+
+      function read() {
+        for (var i = 0; i < file.files.length; i++) {
+          let reader = new FileReader();
+          var file1 = file.files[i];
+          reader.readAsDataURL(file1);
+          reader.onload = function (result) {
+            //reader对象的result属性存储流读取的数据
+            imgDiv.innerHTML += '<img src="' + reader.result + '" alt=""    />';
+            console.log(reader.result); // 打印出转换后的base64
+          };
+        }
+      }
+    </script>
+  </body>
+</html>
